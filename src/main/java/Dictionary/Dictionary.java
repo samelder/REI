@@ -17,7 +17,7 @@ public class Dictionary
 
     public static ArrayList isEnglishWord(String str) throws IOException {
 
-        List<String> list = Files.readAllLines( new File( "..//homework/src/main/java/Dictionary/words.txt" ).toPath(), Charset.defaultCharset() );
+        List<String> list = Files.readAllLines( new File( "..//REI/src/main/java/Dictionary/words.txt" ).toPath(), Charset.defaultCharset() );
 
         List<String> lowercase = list.stream().map( s -> s.toLowerCase() ).filter( s->s.chars().allMatch(Character::isLetter)).collect( Collectors.toList() );
 
